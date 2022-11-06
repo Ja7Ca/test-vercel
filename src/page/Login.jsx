@@ -79,11 +79,11 @@ const Login = () => {
                     <label className="mt-3">
                         Username {msgError.username ? (<span className="text-danger">masih kosong</span>) : ""}
                     </label>
-                    <input type="text" name="username" className="form-control" value={data.username} onChange={onChange}/>
+                    <input type="text" name="username" className="form-control" placeholder="Masukkan Username..." value={data.username} onChange={onChange}/>
                     <label className="mt-3">
                         Password {msgError.password ? (<span className="text-danger">masih kosong</span>) : ""}
                     </label>
-                    <input type="password" name="password" className="form-control" value={data.password} onChange={onChange}/>
+                    <input type="password" name="password" className="form-control" placeholder="Masukkan Password.." value={data.password} onChange={onChange}/>
                     <button type="submit" className="btn bg-blue text-white mt-3 form-control" onClick={handleLogin}>Login</button>
                 </form>
             </div>
