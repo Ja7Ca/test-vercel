@@ -1,0 +1,32 @@
+.hamburger{
+    width: 1.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 1em;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.line{
+    border-radius: 8px;
+    height: 4px;
+    background-color: black;
+    transition-duration: 0.75s;
+    position: relative;
+    top: 0em;
+}
+
+.hamburger.active .line:nth-child(1){
+    transform: rotate(40deg);
+    top: 0.4em;
+}
+
+.hamburger.active .line:nth-child(2){
+    opacity: 0
+}
+
+.hamburger.active .line:nth-child(3){
+    transform: rotate(-40deg);
+    top: -0.4em;
+}

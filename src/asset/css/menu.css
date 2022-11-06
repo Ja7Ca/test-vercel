@@ -1,0 +1,115 @@
+/* Index */
+.bg-red{
+    background-color: #FF6270 !important;
+}
+
+.bg-blue{
+    background-color: #2984FF !important;
+}
+
+.bg-yellow{
+    background-color: #FFDE6A !important;
+}
+
+.bg-orange{
+    background-color: #FE764B !important;
+}
+
+.bg-green{
+    background-color: #70CF98 !important;
+}
+
+.menu{
+    width: 15%;
+    border-right: 3px solid #F6F5F8;
+    height: 100vh;
+    padding: 2.125em 1em;
+    transition-duration: 0.5s;
+    position: fixed;
+    left: 0%;
+}
+
+.hide-menu{
+    left: -100%;
+}
+
+.menu:hover{
+    width: 15%
+}
+
+.menu:hover .text-list{
+    opacity: 100
+}
+
+
+.menu-logo{
+    color: #408AFD;
+    margin-bottom: 3.125em;
+}
+
+.menu-logo img{
+    margin-right: 1em;
+    width: 1.750em;
+}
+
+.menu-logo p{
+    margin: 0;
+    font-size: 1.125em;
+    font-weight: 600;
+}
+
+.menu-list{
+    overflow:hidden;
+    
+}
+
+.list-item{
+    /* color: #818DA2; */
+    color: rgb(213, 213, 213);
+    text-decoration: none;
+    border-radius: 10px;
+    margin: 1em 0;
+    transition-duration: 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.list-item a{
+    color: rgb(213, 213, 213);
+}
+
+.list-item.active{
+    color: #408AFD;
+}
+
+.list-item:hover a{
+    cursor: pointer;
+    color: #408AFD;
+}
+
+.list-item:hover .text-list{
+    cursor: pointer;
+    color: #408AFD;
+}
+
+.list-item:active{
+    background-color: rgb(230, 230, 230);
+    transform: scale(0.95);
+}
+
+.list-item svg{
+    width: 1.5em;
+}
+
+.text-list{
+    font-weight: 600;
+    color: #818DA2;
+    transition-duration: 0.5s
+}
+
+.btn-tambah{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 1;
+}

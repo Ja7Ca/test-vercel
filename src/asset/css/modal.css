@@ -1,0 +1,26 @@
+.wrap-modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw; 
+    height: 100vh; 
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.wrap-modal.active{
+    display: none;
+}
+
+.main-modal{
+    position: relative;
+    overflow-y: auto;
+}
+
+.btn-close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
